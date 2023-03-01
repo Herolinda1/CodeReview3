@@ -1,0 +1,17 @@
+<h1 class="text-center">Card</h1>
+<div *ngFor="let val of Cart">
+    <div class="card d-flex" style="max-width: 580px; padding-top: 30px; margin: 0px; align-items: center;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{{val.image}}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{val.name}}</h5>
+                    <h5 class="card-title" style="color: aqua;">{{val.price}}€</h5>
+                    <p class="card-text">{{val.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

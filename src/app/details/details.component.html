@@ -1,0 +1,14 @@
+<div class="mt-5">
+    <h3 class="text-center">I hope you will like it</h3>
+</div>
+<div class="container">
+    <div class="card mb-3 m-auto">
+        <img src="{{foods.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h1 class="card-title">{{foods.name}}</h1>
+            <p class="card-text">{{foods.description}}</p>
+            <button *ngIf="foods.availability == true" type="button" class="btn btn-success w-60" (click)="addToCart(foods)"> Add to Cart </button>
+            <span style="color: rgb(117, 77, 77)" *ngIf="foods.availability == false">Not avalible</span>
+        </div>
+    </div>
+</div>
